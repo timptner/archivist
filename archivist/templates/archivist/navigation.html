@@ -1,0 +1,12 @@
+<nav class="navbar navbar-expand-lg bg-light">{% load i18n %}
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'people:landing-page' %}">{% trans "Archivist" %}</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation"
+                aria-controls="mainNavigation" aria-expanded="false" aria-label="{% trans "Toggle navigation" %}">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavigation">
+        </div>
+    </div>
+</nav>
