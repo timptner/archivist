@@ -3,22 +3,18 @@
 {% load i18n %}
 
 {% block content %}
-    <div class="row justify-content-center mt-3">
-        <div class="col-6">
-            <div class="card text-bg-success">
-                <div class="card-body">
-                    <h2 class="card-title">{% trans "Successfully registered" %}</h2>
-                    <p class="card-text">
-                        {% blocktrans %}
-                            You have successfully registered an account. Next, you must be patient and wait for your
-                            account to be activated by one of our Student Council members. Our members have been
-                            notified via email that there are accounts waiting to be activated. Once your account is
-                            activated, you will receive an email with instructions on how to set your password. You will
-                            then be able to log in and finally gain access to all exams in our archives.
-                        {% endblocktrans %}
-                    </p>
-                </div>
-            </div>
+    <div class="card text-bg-success">
+        <div class="card-body">
+            <h2 class="card-title">{% trans "Successfully registered" %}</h2>
+            <p class="card-text">
+                {% blocktrans %}
+                    You have successfully registered an account. Next, you must be patient and wait for your account to
+                    be activated by one of our Student Council members. Our members have been notified via email that
+                    there are accounts waiting to be activated. Once your account is activated, you will receive an
+                    email with instructions on how to set your password. You will then be able to log in and finally
+                    gain access to all exams in our archives.
+                {% endblocktrans %}
+            </p>
         </div>
     </div>
 {% endblock %}
