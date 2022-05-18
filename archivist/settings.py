@@ -24,6 +24,9 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'people.apps.PeopleConfig',
 
+    'crispy_forms',
+    'crispy_bootstrap5',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -117,6 +120,10 @@ LANGUAGES = [
 
 STATIC_URL = 'static/'
 
+STATICFILES_DIRS = [
+    BASE_DIR / 'archivist' / 'static',
+]
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
@@ -124,4 +131,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Default user model
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-user-model
+
 AUTH_USER_MODEL = 'people.User'
+
+
+# Crispy DRY forms
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+
+CRISPY_TEMPLATE_PACK = "bootstrap5"
