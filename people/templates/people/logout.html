@@ -1,0 +1,13 @@
+{% extends 'archivist/base.html' %}
+
+{% load i18n %}
+
+{% block content %}
+    <h1>{% trans "Logged out" %}</h1>
+    <p>
+    {% blocktrans %}
+        You were logged out successfully.
+    {% endblocktrans %}
+    </p>
+    <a class="btn btn-primary" href="{% url 'people:landing-page' %}">{% trans "To landing page" %}</a>
+{% endblock %}

@@ -1,3 +1,4 @@
+from django.contrib.auth import views as auth_views
 from django.views import generic
 
 from .forms import RegistrationForm
@@ -21,3 +22,12 @@ class RegistrationView(generic.CreateView):
 
 class RegistrationDoneView(generic.TemplateView):
     template_name = 'people/registration_done.html'
+
+
+class LoginView(auth_views.LoginView):
+    template_name = 'people/login.html'
+    next_page = 'people:landing-page'
+
+
+class LogoutView(auth_views.LogoutView):
+    template_name = 'people/logout.html'
