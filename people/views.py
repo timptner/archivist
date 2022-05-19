@@ -53,3 +53,22 @@ class PasswordChangeView(auth_views.PasswordChangeView):
 
 class PasswordChangeDoneView(auth_views.PasswordChangeDoneView):
     template_name = 'people/change_password_done.html'
+
+
+class PasswordResetView(auth_views.PasswordResetView):
+    template_name = 'people/reset_password.html'
+    email_template_name = 'people/reset_password_email.html'
+    success_url = reverse_lazy('people:reset-password-done')
+
+
+class PasswordResetDoneView(auth_views.PasswordResetDoneView):
+    template_name = 'people/reset_password_done.html'
+
+
+class PasswordResetConfirmView(auth_views.PasswordResetConfirmView):
+    template_name = 'people/reset_password_confirm.html'
+    success_url = reverse_lazy('people:reset-password-complete')
+
+
+class PasswordResetCompleteView(auth_views.PasswordResetCompleteView):
+    template_name = 'people/reset_password_complete.html'

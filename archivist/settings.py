@@ -134,3 +134,16 @@ AUTH_USER_MODEL = 'people.User'
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 
 CRISPY_TEMPLATE_PACK = "bootstrap5"
+
+# Email
+# https://docs.djangoproject.com/en/4.0/topics/email/
+
+EMAIL_USE_TLS = True
+
+EMAIL_HOST = os.getenv('EMAIL_HOST')
+
+EMAIL_PORT = os.getenv('EMAIL_PORT')
+
+EMAIL_HOST_USER = os.getenv('EMAIL_USERNAME')
+
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_PASSWORD')
