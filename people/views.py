@@ -1,4 +1,5 @@
 from django.contrib.auth import views as auth_views
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.exceptions import PermissionDenied
 from django.urls import reverse_lazy
 from django.views import generic
@@ -26,7 +27,7 @@ class RegistrationDoneView(generic.TemplateView):
     template_name = 'people/registration_done.html'
 
 
-class ProfileView(generic.UpdateView):
+class ProfileView(LoginRequiredMixin, generic.UpdateView):
     template_name = 'people/profile.html'
     fields = ['first_name', 'last_name', 'email', 'faculty']
 
