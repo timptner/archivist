@@ -147,3 +147,11 @@ EMAIL_PORT = os.getenv('EMAIL_PORT')
 EMAIL_HOST_USER = os.getenv('EMAIL_USERNAME')
 
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_PASSWORD')
+
+# Auth
+
+LOGIN_URL = 'people:login'
+
+LOGIN_REDIRECT_URL = 'people:profile'
+
+LOGOUT_REDIRECT_URL = None  # 'people:landing-page'
