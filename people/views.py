@@ -31,3 +31,12 @@ class LoginView(auth_views.LoginView):
 
 class LogoutView(auth_views.LogoutView):
     template_name = 'people/logout.html'
+
+
+class PasswordChangeView(auth_views.PasswordChangeView):
+    template_name = 'people/change_password_form.html'
+    success_url = 'done/'
+
+
+class PasswordChangeDoneView(auth_views.PasswordChangeDoneView):
+    template_name = 'people/change_password_done.html'
