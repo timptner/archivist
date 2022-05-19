@@ -1,0 +1,26 @@
+{% extends 'archivist/base.html' %}
+
+{% load i18n crispy_forms_tags %}
+
+{% block content %}
+    <div class="alert alert-warning" role="alert">
+        {% blocktrans %}
+            Please contact your Student Council via email to request a change to your personal information.
+        {% endblocktrans %}
+    </div>
+
+    <form method="post" class="mb-3">
+        {% csrf_token %}
+        <fieldset disabled>
+            {{ form|crispy }}
+            <button type="submit" class="btn btn-primary">{% trans "Update" %}</button>
+        </fieldset>
+    </form>
+
+    <p>
+        {% url 'people:change-password' as change_url %}
+        {% blocktrans %}
+            You can change your password using <a href="{{ change_url }}">this form</a>.
+        {% endblocktrans %}
+    </p>
+{% endblock %}

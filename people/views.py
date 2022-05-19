@@ -1,4 +1,5 @@
 from django.contrib.auth import views as auth_views
+from django.core.exceptions import PermissionDenied
 from django.views import generic
 
 from .forms import RegistrationForm
@@ -22,6 +23,17 @@ class RegistrationView(generic.CreateView):
 
 class RegistrationDoneView(generic.TemplateView):
     template_name = 'people/registration_done.html'
+
+
+class ProfileView(generic.UpdateView):
+    template_name = 'people/profile.html'
+    fields = ['first_name', 'last_name', 'email', 'faculty']
+
+    def post(self, request, *args, **kwargs):
+        raise PermissionDenied
+
+    def get_object(self, queryset=None):
+        return self.request.user
 
 
 class LoginView(auth_views.LoginView):

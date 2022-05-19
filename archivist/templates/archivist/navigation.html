@@ -16,6 +16,11 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navigationUserDropdown">
                             <li>
+                                <a class="dropdown-item" href="{% url 'people:profile' %}">
+                                    {% trans "Profile" %}
+                                </a>
+                            </li>
+                            <li>
                                 <a class="dropdown-item" href="{% url 'people:change-password' %}">
                                     {% trans "Change password" %}
                                 </a>
