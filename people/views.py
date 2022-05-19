@@ -1,5 +1,6 @@
 from django.contrib.auth import views as auth_views
 from django.core.exceptions import PermissionDenied
+from django.urls import reverse_lazy
 from django.views import generic
 
 from .forms import RegistrationForm
@@ -12,7 +13,7 @@ class LandingPage(generic.TemplateView):
 class RegistrationView(generic.CreateView):
     template_name = 'people/registration_form.html'
     form_class = RegistrationForm
-    success_url = 'done/'
+    success_url = reverse_lazy('people:registration-done')
 
     def form_valid(self, form):
         user = form.save(commit=False)
@@ -38,7 +39,7 @@ class ProfileView(generic.UpdateView):
 
 class LoginView(auth_views.LoginView):
     template_name = 'people/login.html'
-    next_page = 'people:landing-page'
+    next_page = reverse_lazy('people:landing-page')
 
 
 class LogoutView(auth_views.LogoutView):
@@ -47,7 +48,7 @@ class LogoutView(auth_views.LogoutView):
 
 class PasswordChangeView(auth_views.PasswordChangeView):
     template_name = 'people/change_password_form.html'
-    success_url = 'done/'
+    success_url = reverse_lazy('people:change-password-done')
 
 
 class PasswordChangeDoneView(auth_views.PasswordChangeDoneView):
