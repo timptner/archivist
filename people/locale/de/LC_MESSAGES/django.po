@@ -1,0 +1,359 @@
+# Copyright (C) 2022 Aiven Timptner
+# This file is distributed under the same license as the archivist package.
+# Aiven Timptner, 2022
+#
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2022-05-19 22:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Aiven Timptner\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps.py:8
+msgid "People"
+msgstr "Leute"
+
+#: forms.py:20
+msgid "Only email addresses with 'st.ovgu.de' are allowed."
+msgstr "Es sind nur E-Mail-Adressen mit der Domain 'st.ovgu.de' erlaubt."
+
+#: forms.py:21
+msgid "Please use the same username as you have for your university account."
+msgstr "Verwende bitte den selben Benutzernamen wie für dein Universitätskonto."
+
+#: forms.py:29
+msgid "You did not use 'st.ovgu.de' as the email domain."
+msgstr "Du hast nicht 'st.ovgu.de' als Domain verwendet."
+
+#: models.py:8
+msgid "Mechanical Engineering"
+msgstr "Maschinenbau"
+
+#: models.py:9
+msgid "Process and Systems Engineering"
+msgstr "Verfahrens- und Systemtechnik"
+
+#: models.py:10
+msgid "Electrical Engineering and Information Technology"
+msgstr "Elektro- und Informationstechnik"
+
+#: models.py:11
+msgid "Computer Science"
+msgstr "Informatik"
+
+#: models.py:12
+msgid "Mathematics"
+msgstr "Mathematik"
+
+#: models.py:13
+msgid "Natural Sciences"
+msgstr "Naturwissenschaften"
+
+#: models.py:14
+msgid "Medicine"
+msgstr "Medizin"
+
+#: models.py:15
+msgid "Humanities, Social Sciences and Education"
+msgstr "Humanwissenschaften"
+
+#: models.py:16
+msgid "Economics and Management"
+msgstr "Wirtschaftswissenschaften"
+
+#: models.py:18
+msgid "Faculty"
+msgstr "Fakultät"
+
+#: models.py:21
+msgid "User"
+msgstr "Benutzer"
+
+#: models.py:22
+msgid "Users"
+msgstr "Benutzer"
+
+#: templates/people/change_password_done.html:8
+msgid "Successfully changed"
+msgstr "Erfolgreich geändert"
+
+#: templates/people/change_password_done.html:10
+msgid ""
+"\n"
+"                    You have successfully changed your password.\n"
+"                "
+msgstr ""
+"\n"
+"Du hast dein Passwort erfolgreich geändert."
+
+#: templates/people/change_password_form.html:5
+#: templates/people/reset_password_confirm.html:13
+msgid "Change password"
+msgstr "Passwort ändern"
+
+#: templates/people/change_password_form.html:9
+msgid "Change"
+msgstr "Ändern"
+
+#: templates/people/landing_page.html:6
+msgid "Welcome"
+msgstr "Willkommen"
+
+#: templates/people/landing_page.html:6
+msgid "Archivist"
+msgstr "Archivar"
+
+#: templates/people/landing_page.html:10
+msgid "The only exam archive you will need during your studies."
+msgstr "Das einzige Prüfungsarchiv, welches du während deines Studiums "
+"benötigen wirst."
+
+#: templates/people/landing_page.html:13
+msgid "Maybe you, in the future, to your buddy"
+msgstr "Vielleicht du, in der Zukunft, zu deinem Kumpel"
+
+#: templates/people/landing_page.html:18
+msgid ""
+"\n"
+"            Archivist is a web application for submitting and viewing memory "
+"transcripts for various courses at the\n"
+"            <a href=\"https://www.ovgu.de\" target=\"_blank\">Otto von "
+"Guericke University</a> Magdeburg. The service is\n"
+"            maintained and managed by the student council members.\n"
+"        "
+msgstr ""
+"\n"
+"Archivar ist eine Web-Anwendung zum Einreichen und Einsehen von "
+"Gedächtnisprotokollen für beliebige Kurse an der "
+"<a href=\"https://www.ovgu.de\" target=\"_blank\">Otto-von-Guericke-Universität</a> "
+"Magdeburg. Der Dienst wird durch die Mitglieder der Fachschaftsräte verwaltet "
+"und betreut."
+
+#: templates/people/landing_page.html:25
+msgid "Register now"
+msgstr "Jetzt registrieren"
+
+#: templates/people/login.html:6
+msgid "Login"
+msgstr "Anmelden"
+
+#: templates/people/login.html:13
+msgid "Log in"
+msgstr "Anmelden"
+
+#: templates/people/login.html:15
+msgid "Forgot your password?"
+msgstr "Passwort vergessen?"
+
+#: templates/people/logout.html:6
+msgid "Logged out"
+msgstr "Abgemeldet"
+
+#: templates/people/logout.html:8
+msgid ""
+"\n"
+"        You were logged out successfully.\n"
+"    "
+msgstr ""
+"\n"
+"Du wurdest erfolgreich abgemeldet."
+
+#: templates/people/logout.html:12
+msgid "To landing page"
+msgstr "Zur Startseite"
+
+#: templates/people/profile.html:7
+msgid ""
+"\n"
+"            Please contact your Student Council via email to request a "
+"change to your personal information.\n"
+"        "
+msgstr ""
+"\n"
+"Bitte wende dich per E-Mail an deinen Fachschaftsrat um Änderungen an deinen "
+"persönlichen Informationen zu veranlassen."
+
+#: templates/people/profile.html:16
+msgid "Update"
+msgstr "Aktualisieren"
+
+#: templates/people/profile.html:22
+#, python-format
+msgid ""
+"\n"
+"            You can change your password using <a href=\"%(change_url)s"
+"\">this form</a>.\n"
+"        "
+msgstr ""
+"\n"
+"Du kannst dein Passwort mit <a href=\"%(change_url)s\">diesem Formular</a> ändern."
+
+#: templates/people/registration_done.html:8
+msgid "Successfully registered"
+msgstr "Erfolgreich registriert"
+
+#: templates/people/registration_done.html:10
+msgid ""
+"\n"
+"                    You have successfully registered an account. Next, you "
+"must be patient and wait for your account to\n"
+"                    be activated by one of our Student Council members. Our "
+"members have been notified via email that\n"
+"                    there are accounts waiting to be activated. Once your "
+"account is activated, you will receive an\n"
+"                    email with instructions on how to set your password. You "
+"will then be able to log in and finally\n"
+"                    gain access to all exams in our archives.\n"
+"                "
+msgstr ""
+"\n"
+"Du hast erfolgreich ein Konto registriert. Nun musst du dich gedulden und "
+"warten bis dein Konto von einem Mitglied deines Fachschaftsrates "
+"aktiviert wird. Die Mitglieder wurden bereits per E-Mail darüber "
+"informiert, dass Konten zur Aktivierung bereit stehen. Sobald dein Konto "
+"aktiviert wurde wirst du eine E-Mail mit Anweisungen zum Setzen deines "
+"Passworts erhalten. Anschließend kannst du dich anmelden und endlich Zugriff "
+"auf alle Prüfungen in unserem Archiv erhalten."
+
+#: templates/people/registration_form.html:6
+msgid "Create a new account"
+msgstr "Neues Konto erstellen"
+
+#: templates/people/registration_form.html:10
+msgid "Register"
+msgstr "Registrieren"
+
+#: templates/people/reset_password.html:6
+#: templates/people/reset_password.html:19
+#: templates/people/reset_password_complete.html:8
+msgid "Password reset"
+msgstr "Passwort zurücksetzen"
+
+#: templates/people/reset_password.html:9
+msgid ""
+"\n"
+"            Enter your university email address below and follow the "
+"instructions in the email to reset your password.\n"
+"        "
+msgstr ""
+"\n"
+"Gib deine universitäre E-Mail-Adresse ein und folge anschließend den "
+"Anweisungen in der E-Mail zum Zurücksetzen deines Passwortes."
+
+#: templates/people/reset_password_complete.html:11
+msgid ""
+"\n"
+"                    Your password has been set. You may go ahead and log in "
+"now.\n"
+"                "
+msgstr ""
+"\n"
+"Dein Passwort wurde geändert. Du kannst dich nun mit deinem neuen Passwort "
+"anmelden."
+
+#: templates/people/reset_password_complete.html:16
+msgid "To login"
+msgstr "Zur Anmeldung"
+
+#: templates/people/reset_password_confirm.html:6
+msgid "Set new password"
+msgstr "Neues Passwort festlegen"
+
+#: templates/people/reset_password_done.html:8
+msgid "Password reset sent"
+msgstr "E-Mail zum Zurücksetzen deines Passwortes versendet"
+
+#: templates/people/reset_password_done.html:10
+msgid ""
+"\n"
+"                    We’ve emailed you instructions for setting your "
+"password, if an account exists with the email you\n"
+"                    entered. You should receive them shortly.\n"
+"                "
+msgstr ""
+"\n"
+"Wir haben dir eine E-Mail mit Anweisungen zum Zurücksetzen deines Passwortes "
+"geschickt, falls ein Konto mit dieser E-Mail-Adresse existiert. Die E-Mail "
+"sollte jeden Augenblick ankommen."
+
+#: templates/people/reset_password_done.html:16
+msgid ""
+"\n"
+"                    If you don’t receive an email, please make sure you’ve "
+"entered your address correctly, and\n"
+"                    check your spam folder.\n"
+"                "
+msgstr ""
+"\n"
+"Falls du keine E-Mail erhalten hast überprüfe bitte ob du deine universitäre "
+"Adresse korrekt eingegeben hast. Und überprüfe auch deinen SPAM-Ordner."
+
+#: templates/people/reset_password_email.html:1
+#, python-format
+msgid ""
+"You're receiving this email because you requested a password reset for your "
+"user account at %(site_name)s."
+msgstr ""
+"Du erhältst diese E-Mail, da du das Zurücksetzen deines Passwortes "
+"bei der Seite %(site_name)s angefordert hast."
+
+#: templates/people/reset_password_email.html:3
+msgid "Please go to the following page and choose a new password:"
+msgstr "Bitte folge dem Link und setzte ein neues Passwort:"
+
+#: templates/people/reset_password_email.html:7
+msgid "Your username, in case you’ve forgotten:"
+msgstr "Dein Benutzername, falls du ihn vergessen hast:"
+
+#: templates/people/reset_password_email.html:9
+#, python-format
+msgid "The %(site_name)s team"
+msgstr "Das Team von %(site_name)s"
+
+#: urls.py:9
+msgid "register/"
+msgstr "registrieren/"
+
+#: urls.py:10
+msgid "register/done/"
+msgstr "registrieren/erledigt/"
+
+#: urls.py:11
+msgid "profile/"
+msgstr "profil/"
+
+#: urls.py:12
+msgid "login/"
+msgstr "anmelden/"
+
+#: urls.py:13
+msgid "logout/"
+msgstr "abmelden/"
+
+#: urls.py:14
+msgid "password/change/"
+msgstr "passwort/erneuern/"
+
+#: urls.py:15
+msgid "password/change/done/"
+msgstr "passwort/erneuern/erledigt/"
+
+#: urls.py:16
+msgid "password/reset/"
+msgstr "passwort/vergessen/"
+
+#: urls.py:17
+msgid "password/reset/done/"
+msgstr "passwort/vergessen/erledigt/"
+
+#: urls.py:18
+msgid "reset/<uidb64>/<token>/"
+msgstr "vergessen/<uidb64>/<token>/"
+
+#: urls.py:19
+msgid "reset/done/"
+msgstr "vergessen/erledigt/"
