@@ -1,0 +1,30 @@
+{% extends 'archivist/base.html' %}
+
+{% load i18n %}
+
+{% block section %}
+    <div class="container is-max-desktop">
+        <div class="content">
+            <h1>{% trans "Welcome, Archivist" %}</h1>
+
+            <article class="message is-info">
+                <div class="message-body">
+                    {% blocktrans %}
+                        "The only exam archive you will need during your studies."<br>
+                        <small>– Maybe you, in the future, to your buddy</small>
+                    {% endblocktrans %}
+                </div>
+            </article>
+
+            <p>
+                {% blocktrans %}
+                    Archivist is a web application for submitting and viewing memory transcripts for various courses at
+                    the <a href="https://www.ovgu.de/" target="_blank">Otto von Guericke University Magdeburg</a>. The
+                    service is maintained and managed by the student council members.
+                {% endblocktrans %}
+            </p>
+        </div>
+
+        <a class="button is-primary is-large" href="{% url 'people:register' %}">{% trans "Register now" %}</a>
+    </div>
+{% endblock %}

@@ -7,10 +7,6 @@ from django.views import generic
 from .forms import RegistrationForm
 
 
-class LandingPage(generic.TemplateView):
-    template_name = 'people/landing_page.html'
-
-
 class RegistrationView(generic.CreateView):
     template_name = 'people/registration_form.html'
     form_class = RegistrationForm

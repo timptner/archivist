@@ -7,5 +7,6 @@ urlpatterns = [
 ]
 
 urlpatterns += i18n_patterns(
-    path('', include('people.urls')),
+    path('', include('pages.urls')),
+    path('people/', include('people.urls')),
 )
