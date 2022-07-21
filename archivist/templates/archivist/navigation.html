@@ -1,45 +1,41 @@
-<nav class="navbar navbar-expand-lg bg-light">{% load i18n %}
-    <div class="container-fluid">
-        <a class="navbar-brand" href="{% url 'people:landing-page' %}">{% trans "Archivist" %}</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation"
-                aria-controls="mainNavigation" aria-expanded="false" aria-label="{% trans "Toggle navigation" %}">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<nav class="navbar" role="navigation" aria-label="main navigation">{% load i18n %}
+    <div class="navbar-brand">
+        <a class="navbar-item" href="{% url 'people:landing-page' %}">{% trans "Archivist" %}</a>
 
-        <div class="collapse navbar-collapse" id="mainNavigation">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                {% if user.is_authenticated %}
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" type="button" id="navigationUserDropdown"
-                           data-bs-toggle="dropdown" aria-expanded="false">
-                            {{ user }}
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarMain" class="navbar-menu">
+        <div class="navbar-end">
+            {% if user.is_authenticated %}
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">{{ user }}</a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="{% url 'people:profile' %}">{% trans "Profile" %}</a>
+                        <a class="navbar-item" href="{% url 'people:change-password' %}">
+                            {% trans "Change password" %}
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navigationUserDropdown">
-                            <li>
-                                <a class="dropdown-item" href="{% url 'people:profile' %}">
-                                    {% trans "Profile" %}
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="{% url 'people:change-password' %}">
-                                    {% trans "Change password" %}
-                                </a>
-                            </li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="{% url 'people:logout' %}">{% trans "Logout" %}</a></li>
-                        </ul>
-                    </li>
-                {% else %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'people:register' %}">{% trans "Register" %}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'people:login' %}">{% trans "Login" %}</a>
-                    </li>
-                {% endif %}
-            </ul>
+
+                        <hr class="navbar-divider">
+
+                        <a class="navbar-item" href="{% url 'people:logout' %}">{% trans "Logout" %}</a>
+                    </div>
+                </div>
+            {% else %}
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary" href="{% url 'people:register' %}">
+                            <strong>{% trans "Register" %}</strong>
+                        </a>
+                        <a class="button is-light" href="{% url 'people:login' %}">{% trans "Login" %}</a>
+                    </div>
+                </div>
+            {% endif %}
         </div>
     </div>
 </nav>
